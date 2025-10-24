@@ -33,6 +33,12 @@ py -m pipx ensurepath
 
 #### 🧩 Step 2: Install PNG2PDF using pipx
 
+- TLDR: just run this command once:
+```bash
+pipx run git+https://github.com/<username>/png2pdf.git images_folder
+```
+
+
 ```bash
 pipx install git+https://github.com/cenzwong/images2pdf.git
 ```
