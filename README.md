@@ -20,6 +20,7 @@ pip install pillow
 
 ```bash
 pip install git+https://github.com/cenzwong/images2pdf.git
+python -m png2pdf -h | --help
 ```
 
 1. Place your `.PNG` files inside a folder (e.g. `images/`).

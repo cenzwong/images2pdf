@@ -25,10 +25,26 @@ def png_to_pdf(image_folder, output_pdf):
     first_image.save(output_pdf, save_all=True, append_images=images)
     print(f"✅ Combined {len(png_files)} PNGs into {output_pdf}")
 
+def print_help():
+    help_text = """
+🖼️ PNG to PDF Converter
+------------------------
+Combine all PNG images in a folder into a single PDF file (sorted naturally).
+
+Usage:
+    python -m png2pdf <image_folder> [output_pdf]
+    python -m png2pdf -h | --help
+
+Examples:
+    python -m png2pdf ./images
+    python -m png2pdf ./images my_output.pdf
+"""
+    print(help_text.strip())
+
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python -m png2pdf <image_folder> [output_pdf]")
-        sys.exit(1)
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+        print_help()
+        sys.exit(0)
 
     image_folder = sys.argv[1]
     output_pdf = sys.argv[2] if len(sys.argv) > 2 else "combined.pdf"
