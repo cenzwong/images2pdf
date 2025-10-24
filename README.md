@@ -35,7 +35,7 @@ py -m pipx ensurepath
 
 - TLDR: just run this command once:
 ```bash
-pipx run git+https://github.com/<username>/png2pdf.git images_folder
+pipx run --spec git+https://github.com/cenzwong/images2pdf.git png2pdf images
 ```
 
 
