@@ -1,0 +1,6 @@
+[project]
+name = "png2pdf"
+version = "0.1.0"
+description = "Combine PNGs into a PDF with natural sorting"
+requires-python = ">=3.7"
+dependencies = ["pillow"]

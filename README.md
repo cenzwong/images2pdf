@@ -16,6 +16,11 @@ pip install pillow
 ---
 
 ## 🚀 Usage
+0. Install the module (if not already done):
+
+```bash
+pip install git+https://github.com/cenzwong/images2pdf.git
+```
 
 1. Place your `.PNG` files inside a folder (e.g. `images/`).
 
