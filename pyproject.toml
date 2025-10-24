@@ -1,6 +1,9 @@
 [project]
 name = "png2pdf"
-version = "1.0.0"
-description = "Combine PNGs into a PDF with natural sorting"
+version = "1.0.2"
+description = "Combine PNGs into a single PDF with natural sorting"
 requires-python = ">=3.7"
 dependencies = ["pillow"]
+
+[project.scripts]
+png2pdf = "png2pdf.__main__:main"
